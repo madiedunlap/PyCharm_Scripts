@@ -20,7 +20,7 @@ do
 done
 
 
-# edit round 2: remove
+# edit round 2: remove dynamic_min_depth 0.9
 
 #!/usr/bin/env bash
 
