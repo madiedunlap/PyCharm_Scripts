@@ -1,0 +1,50 @@
+module load bbtools
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBB.10343.7.157719.TGACCA.anqdpht.fastq ihist=AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.cov.stats.txt out=AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.output.sam > AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq ihist=AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.cov.stats.txt out=AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.output.sam > AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq ihist=AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.cov.stats.txt out=AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.output.sam > AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq ihist=AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.cov.stats.txt out=AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.output.sam > AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBN.10348.4.157965.CGTACG.anqdpht.fastq ihist=AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.cov.stats.txt out=AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.output.sam > AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBO.10343.8.157724.CAGATC.anqdpht.fastq ihist=AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.cov.stats.txt out=AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.output.sam > AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq ihist=AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.cov.stats.txt out=AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.output.sam > AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBS.10343.8.157724.GATCAG.anqdpht.fastq ihist=AYSBS.10343.8.157724.GATCAG.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBS.10343.8.157724.GATCAG.anqdpht.fastq.cov.stats.txt out=AYSBS.10343.8.157724.GATCAG.anqdpht.fastq.output.sam > AYSBS.10343.8.157724.GATCAG.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBT.10348.2.157955.AGTTCC.anqdpht.fastq ihist=AYSBT.10348.2.157955.AGTTCC.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBT.10348.2.157955.AGTTCC.anqdpht.fastq.cov.stats.txt out=AYSBT.10348.2.157955.AGTTCC.anqdpht.fastq.output.sam > AYSBT.10348.2.157955.AGTTCC.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBU.10348.4.157965.GAGTGG.anqdpht.fastq ihist=AYSBU.10348.4.157965.GAGTGG.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBU.10348.4.157965.GAGTGG.anqdpht.fastq.cov.stats.txt out=AYSBU.10348.4.157965.GAGTGG.anqdpht.fastq.output.sam > AYSBU.10348.4.157965.GAGTGG.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBW.10348.2.157955.GGCTAC.anqdpht.fastq ihist=AYSBW.10348.2.157955.GGCTAC.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBW.10348.2.157955.GGCTAC.anqdpht.fastq.cov.stats.txt out=AYSBW.10348.2.157955.GGCTAC.anqdpht.fastq.output.sam > AYSBW.10348.2.157955.GGCTAC.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBX.10348.3.157960.GTGAAA.anqdpht.fastq ihist=AYSBX.10348.3.157960.GTGAAA.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBX.10348.3.157960.GTGAAA.anqdpht.fastq.cov.stats.txt out=AYSBX.10348.3.157960.GTGAAA.anqdpht.fastq.output.sam > AYSBX.10348.3.157960.GTGAAA.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBY.10343.7.157719.CGATGT.anqdpht.fastq ihist=AYSBY.10343.7.157719.CGATGT.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBY.10343.7.157719.CGATGT.anqdpht.fastq.cov.stats.txt out=AYSBY.10343.7.157719.CGATGT.anqdpht.fastq.output.sam > AYSBY.10343.7.157719.CGATGT.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSBZ.10348.4.157965.GTGGCC.anqdpht.fastq ihist=AYSBZ.10348.4.157965.GTGGCC.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSBZ.10348.4.157965.GTGGCC.anqdpht.fastq.cov.stats.txt out=AYSBZ.10348.4.157965.GTGGCC.anqdpht.fastq.output.sam > AYSBZ.10348.4.157965.GTGGCC.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSCA.10348.5.157970.GGTAGC.anqdpht.fastq ihist=AYSCA.10348.5.157970.GGTAGC.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSCA.10348.5.157970.GGTAGC.anqdpht.fastq.cov.stats.txt out=AYSCA.10348.5.157970.GGTAGC.anqdpht.fastq.output.sam > AYSCA.10348.5.157970.GGTAGC.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSCB.10348.2.157955.ATGTCA.anqdpht.fastq ihist=AYSCB.10348.2.157955.ATGTCA.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSCB.10348.2.157955.ATGTCA.anqdpht.fastq.cov.stats.txt out=AYSCB.10348.2.157955.ATGTCA.anqdpht.fastq.output.sam > AYSCB.10348.2.157955.ATGTCA.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSCC.10348.5.157970.ACTGAT.anqdpht.fastq ihist=AYSCC.10348.5.157970.ACTGAT.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSCC.10348.5.157970.ACTGAT.anqdpht.fastq.cov.stats.txt out=AYSCC.10348.5.157970.ACTGAT.anqdpht.fastq.output.sam > AYSCC.10348.5.157970.ACTGAT.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSCG.10343.8.157724.GCCAAT.anqdpht.fastq ihist=AYSCG.10343.8.157724.GCCAAT.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSCG.10343.8.157724.GCCAAT.anqdpht.fastq.cov.stats.txt out=AYSCG.10343.8.157724.GCCAAT.anqdpht.fastq.output.sam > AYSCG.10343.8.157724.GCCAAT.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSCU.10348.5.157970.ATTCCT.anqdpht.fastq ihist=AYSCU.10348.5.157970.ATTCCT.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSCU.10348.5.157970.ATTCCT.anqdpht.fastq.cov.stats.txt out=AYSCU.10348.5.157970.ATTCCT.anqdpht.fastq.output.sam > AYSCU.10348.5.157970.ATTCCT.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSCW.10348.5.157970.CAAAAG.anqdpht.fastq ihist=AYSCW.10348.5.157970.CAAAAG.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSCW.10348.5.157970.CAAAAG.anqdpht.fastq.cov.stats.txt out=AYSCW.10348.5.157970.CAAAAG.anqdpht.fastq.output.sam > AYSCW.10348.5.157970.CAAAAG.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSCX.10348.6.157975.CAACTA.anqdpht.fastq ihist=AYSCX.10348.6.157975.CAACTA.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSCX.10348.6.157975.CAACTA.anqdpht.fastq.cov.stats.txt out=AYSCX.10348.6.157975.CAACTA.anqdpht.fastq.output.sam > AYSCX.10348.6.157975.CAACTA.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSCY.10348.6.157975.CACCGG.anqdpht.fastq ihist=AYSCY.10348.6.157975.CACCGG.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSCY.10348.6.157975.CACCGG.anqdpht.fastq.cov.stats.txt out=AYSCY.10348.6.157975.CACCGG.anqdpht.fastq.output.sam > AYSCY.10348.6.157975.CACCGG.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYSCZ.10348.6.157975.CACGAT.anqdpht.fastq ihist=AYSCZ.10348.6.157975.CACGAT.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYSCZ.10348.6.157975.CACGAT.anqdpht.fastq.cov.stats.txt out=AYSCZ.10348.6.157975.CACGAT.anqdpht.fastq.output.sam > AYSCZ.10348.6.157975.CACGAT.anqdpht.fastq.BB.log
+
+bbmap.sh -Xmx20g idtag=t outputunmapped=f in=AYWUB.10377.2.159149.GCTCCA.anqdpht.fastq ihist=AYWUB.10377.2.159149.GCTCCA.anqdpht.fastq.insert.size.txt samplerate=0.1 covstats=AYWUB.10377.2.159149.GCTCCA.anqdpht.fastq.cov.stats.txt out=AYWUB.10377.2.159149.GCTCCA.anqdpht.fastq.output.sam > AYWUB.10377.2.159149.GCTCCA.anqdpht.fastq.BB.log
+
