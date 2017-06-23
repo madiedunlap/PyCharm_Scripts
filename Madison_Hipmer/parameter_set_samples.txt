@@ -1,4 +1,4 @@
-# edit round 3 (based on configs script): min depth 2, mer size 101
+# edit round 1/18 (based on configs script): min depth 2, mer size 101
 
 module use ~regan/modulefiles-cori
 
@@ -96,7 +96,7 @@ export RUNDIR='AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth
 sbatch --nodes=4 --time=30:00 --partition=debug $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config
 
 
-# edit round 4: min depth 2, mer size 71
+# edit round 2/18: min depth 2, mer size 71
 
 
 module use ~regan/modulefiles-cori
@@ -195,7 +195,7 @@ export RUNDIR='AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth
 sbatch --nodes=4 --time=30:00 --partition=debug $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config
 
 
-# edit round 5: min depth 2, mer size 91
+# edit round 3/18: min depth 2, mer size 91
 
 module use ~regan/modulefiles-cori
 

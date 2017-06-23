@@ -8,7 +8,7 @@ do
 done
 
 
-# edit round 1: remove min_depth_cutoff 2
+# edit: remove min_depth_cutoff 2
 
 #!/usr/bin/env bash
 
@@ -20,7 +20,7 @@ do
 done
 
 
-# edit round 2: remove dynamic_min_depth 0.9
+# edit: remove dynamic_min_depth 0.9
 
 #!/usr/bin/env bash
 
@@ -31,7 +31,7 @@ do
         # HIPMER_CONFIG=${file}.config sbatch --nodes=4 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
 done
 
-# edit round 3: use both dynamic_min_depth 0.9 and min_depth_cutoff 2, remove num_prefix_blocks and genome_size
+# edit round 1/18: use dynamic_min_depth 0.9, mer_size 101, and min_depth_cutoff 2, remove num_prefix_blocks and genome_size
 
 #!/usr/bin/env bash
 
@@ -42,7 +42,7 @@ do
         # HIPMER_CONFIG=${file}.config sbatch --nodes=4 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
 done
 
-# edit round 4: same min_depth_cutoff, change mer_size to 71
+# edit round 2/18: same min_depth_cutoff, change mer_size to 71
 
 #!/usr/bin/env bash
 
@@ -54,7 +54,7 @@ do
 done
 
 
-# edit round 5: same min_depth_cutoff_2, change mer_size_91
+# edit round 3/18: same min_depth_cutoff_2, change mer_size_91
 
 #!/usr/bin/env bash
 
