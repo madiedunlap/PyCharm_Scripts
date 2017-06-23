@@ -52,3 +52,15 @@ do
         printf "lib_seq %s AlbAL2D 535 131 0 0 0 1 1 1 0 0 1 1\nmer_sizes 71\ndynamic_min_depth 0.9\nis_diploid 0\nmin_depth_cutoff 2" "$file" | cat - >> ${file}.config
         # HIPMER_CONFIG=${file}.config sbatch --nodes=4 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
 done
+
+
+# edit round 5: same min_depth_cutoff_2, change mer_size_91
+
+#!/usr/bin/env bash
+
+for file in *.fastq
+do
+        touch ${file}.config
+        printf "lib_seq %s AlbAL2D 535 131 0 0 0 1 1 1 0 0 1 1\nmer_sizes 91\ndynamic_min_depth 0.9\nis_diploid 0\nmin_depth_cutoff 2" "$file" | cat - >> ${file}.config
+        # HIPMER_CONFIG=${file}.config sbatch --nodes=4 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
+done
