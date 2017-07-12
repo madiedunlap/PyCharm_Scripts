@@ -245,7 +245,7 @@ do
 done
 
 
-# edit round 19: range mer_size 57,87,127, try each min_depth
+# edit round 19: range mer_size 57,87,127, min_depth_2
 
 #!/usr/bin/env bash
 
@@ -255,3 +255,24 @@ do
         # HIPMER_CONFIG=${file}.config salloc --nodes=8 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
 done
 
+
+# edit round 20: range mer_size 57,87,127, min_depth_4
+
+#!/usr/bin/env bash
+
+for file in *.fastq
+do
+        printf "lib_seq %s AlbAL2D 535 131 0 0 0 1 1 1 0 0 1 1\nmer_sizes 57,87,127\ndynamic_min_depth 0.9\nis_diploid 0\nmin_depth_cutoff 4" "$file" | cat - >> ${file}.config
+        # HIPMER_CONFIG=${file}.config salloc --nodes=8 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
+done
+
+
+# edit round 21: range mer_size 57,87,127, min_depth_7
+
+#!/usr/bin/env bash
+
+for file in *.fastq
+do
+        printf "lib_seq %s AlbAL2D 535 131 0 0 0 1 1 1 0 0 1 1\nmer_sizes 57,87,127\ndynamic_min_depth 0.9\nis_diploid 0\nmin_depth_cutoff 7" "$file" | cat - >> ${file}.config
+        # HIPMER_CONFIG=${file}.config salloc --nodes=8 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
+done
