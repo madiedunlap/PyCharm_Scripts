@@ -276,3 +276,36 @@ do
         printf "lib_seq %s AlbAL2D 535 131 0 0 0 1 1 1 0 0 1 1\nmer_sizes 57,87,127\ndynamic_min_depth 0.9\nis_diploid 0\nmin_depth_cutoff 7" "$file" | cat - >> ${file}.config
         # HIPMER_CONFIG=${file}.config salloc --nodes=8 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
 done
+
+
+# edit round 22: num_scaff_loops 2, mer_sizes , min_depth
+
+#!/usr/bin/env bash
+
+for file in *.fastq
+do
+        printf "lib_seq %s AlbAL2D 535 131 0 0 0 1 1 1 0 0 1 1\nmer_sizes 57,87,127\ndynamic_min_depth 0.9\nis_diploid 0\nnum_scaff_loops 2\nmin_depth_cutoff 7" "$file" | cat - >> ${file}.config
+        # HIPMER_CONFIG=${file}.config sbatch --nodes=8 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
+done
+
+
+# edit round 23: min_depth_cutoff_4, mer_sizes_65_91_121
+
+#!/usr/bin/env bash
+
+for file in *.fastq
+do
+        printf "lib_seq %s AlbAL2D 535 131 0 0 0 1 1 1 0 0 1 1\nmer_sizes 65,91,121\ndynamic_min_depth 0.9\nis_diploid 0\nmin_depth_cutoff 4" "$file" | cat - >> ${file}.config
+        # HIPMER_CONFIG=${file}.config sbatch --nodes=8 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
+done
+
+
+# edit round 24: min_depth_cutoff_3, mer_sizes_93
+
+#!/usr/bin/env bash
+
+for file in *.fastq
+do
+        printf "lib_seq %s AlbAL2D 535 131 0 0 0 1 1 1 0 0 1 1\nmer_sizes 93\ndynamic_min_depth 0.9\nis_diploid 0\nmin_depth_cutoff 3" "$file" | cat - >> ${file}.config
+        # HIPMER_CONFIG=${file}.config sbatch --nodes=8 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
+done
