@@ -1,0 +1,148 @@
+Notes: testing parameters on HipMer
+
+# to cancel a current command immediately
+
+Ctrl + C
+
+# to remove or copy non-empty directories, respectively
+
+rm -r , cp -r
+
+# to add bscratch to your home directory (for example if you want to be able to access bscratch from cori)
+
+from home directory
+edit .bash_profile.ext
+add entry: export BSCRATCH=full path to directory
+
+# note: you must stripe a file/directory before you add anything to it!
+
+# the basic format for setting the configs script each time
+
+#!/usr/bin/env bash
+
+for file in *.fastq
+do
+        touch ${file}.config
+        printf "lib_seq %s AlbAL2D 241 48 0 0 0 1 1 1 0 0 1 1\ngenome_size 272000000\nmer_sizes 101\ndynamic_min_depth 0.9\nis_diploid 0\nnum_prefix_blocks 16\nmin_depth_cutoff 2" "$file" | cat - >> ${file}.config
+        # HIPMER_CONFIG=${file}.config sbatch --nodes=4 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
+done
+
+# to reset the configs each time you test a new parameter
+
+/global/projectb/scratch/mdunlap/fastq_data_nonstriped$ vi create_configs_m.sh
+
+"i" to edit in vi
+esc : wq! to save and exit
+
+ls
+rm *.fastq.config
+ls
+./create_configs_m.sh
+
+/global/cscratch1/sd/mdunlap/fastq_data_striped> rm *.fastq.config
+cp /global/projectb/scratch/mdunlap/fastq_data_nonstriped/*.anqdpht.fastq.config /global/cscratch1/sd/mdunlap/fastq_data_striped/
+
+ls
+
+# if you don't have access/permissions to a file in your own directory, you can copy the file to gain ownership (+ rename it) and/or do chmod u+x
+
+# the basic outline for a batch job on cori (for one sample) *** make sure to rename each new parameter outpur directory to prevent overwriting ***
+
+module use ~regan/modulefiles-cori
+
+module use ~regan/modulefiles-cori
+
+module load HipMer/latest
+sbatch --nodes=XX --time=YY --partition=ZZ $(which sbatch_cori.sh) $(which run_hipmer.sh) my.config
+
+sbatch --nodes=4 --time=30:00 --partition=debug $(which sbatch_cori.sh) $(which run_hipmer.sh) put_your_config_file_here.config
+
+replace "your put_your_config_file_here.config" with the real config file, such as: AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config
+
+#**** do this in the directory with your fastq and config ****
+
+# example:
+
+module use ~regan/modulefiles-cori
+
+module load HipMer/latest
+
+
+mkdir -p AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_2.mer_sizes_101
+
+cp AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_2.mer_sizes_101
+
+cp AYSBB.10343.7.157719.TGACCA.anqdpht.fastq AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_2.mer_sizes_101
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config'
+
+export RUNDIR='AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_2.mer_sizes_101'
+
+sbatch --nodes=4 --time=30:00 --partition=debug $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config
+
+
+# for each parameter change:
+
+change the config file by editing it in genepool to match new parameters, rm old configs, rerun config script, remove old configs in cscratch, copy over to cori cscratch from bscratch, reflect parameter change in rundir directory name, run
+
+
+# give file permissions (can be added to initial login/home directory as well)
+
+chmod -R 755 /global/cscratch1/sd/mdunlap
+chgrp -R gtrnd /global/cscratch1/sd/mdunlap
+chmod g+s /global/cscratch1/sd/mdunlap
+
+# in order to use prinseq to get the statistics for an assembly
+
+chmod u+x /global/cscratch1/sd/mdunlap/fastq_data_striped/prinseq-lite-0.20.4/prinseq-lite.pl
+export PATH=$PATH:/global/cscratch1/sd/mdunlap/fastq_data_striped/prinseq-lite-0.20.4/
+for f in *.fa; do
+   STEM=$(basename "${f}" .fa)
+   echo "${f}" > fasta_stats.all.txt
+   prinseq-lite.pl -verbose -fasta "${f}" -stats_all >> fasta_stats.all.txt
+done
+
+# use prinseq to get the statistics for a fastq file
+
+export PATH=$PATH:/global/cscratch1/sd/mdunlap/fastq_data_striped/prinseq-lite-0.20.4/
+for f in *.fastq; do
+   STEM=$(basename "${f}" .fastq)
+   echo "${f}" > fastq_stats.all.txt
+   prinseq-lite.pl -verbose -fastq "${f}" -stats_all >> fastq_stats.all.txt
+done
+
+# use this to get the fastq reads data
+
+cat my.fastq | grep ">" | wc -l
+
+# use the grep command to pull certain elements of a file (in this case, insert size)
+
+for f in *fastq.insert.size.txt; do
+    STEM=$(basename "${f}" .fastq.insert.size.txt)
+    echo "$STEM" >> sample.filenames.txt
+done
+
+for f in *fastq.insert.size.txt; do
+    STEM=$(basename "${f}" .fastq.insert.size.txt)
+    cat "${f}" | grep "Median" >> sample.insertsize.txt
+done
+
+paste sample.filenames.txt sample.insertsize.txt > insertsize.data.txt
+
+# when using fungalp jgi partition, -N 32 is the number of nodes it is requesting
+
+I had to increase the number of nodes I requested in order to match this
+
+# you can set mer_sizes as a range
+
+in the configs script, just use a comma to separate the values
+
+example:
+
+for file in *.fastq
+do
+        touch ${file}.config
+        printf "lib_seq %s AlbAL2D 241 48 0 0 0 1 1 1 0 0 1 1\ngenome_size 272000000\nmer_sizes 65,91,121\ndynamic_min_depth 0.9\nis_diploid 0\nnum_prefix_blocks 16\nmin_depth_cutoff 2" "$file" | cat - >> ${file}.config
+        # HIPMER_CONFIG=${file}.config sbatch --nodes=4 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
+done
+

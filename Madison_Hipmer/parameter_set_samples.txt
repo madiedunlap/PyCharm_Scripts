@@ -2195,7 +2195,7 @@ export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBB.1034
 
 export RUNDIR='AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121'
 
-sbatch -A fungalp -C haswell --nodes=8 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config
+sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config
 
 
 mkdir -p AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121
@@ -2208,7 +2208,7 @@ export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBC.1034
 
 export RUNDIR='AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121'
 
-sbatch -A fungalp -C haswell --nodes=8 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config
+sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config
 
 
 mkdir -p AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121
@@ -2221,7 +2221,7 @@ export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBG.1034
 
 export RUNDIR='AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121'
 
-sbatch -A fungalp -C haswell --nodes=8 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config
+sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config
 
 
 mkdir -p AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121
@@ -2234,7 +2234,7 @@ export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBH.1034
 
 export RUNDIR='AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121'
 
-sbatch -A fungalp -C haswell --nodes=8 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config
+sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config
 
 
 mkdir -p AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121
@@ -2247,7 +2247,7 @@ export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBN.1034
 
 export RUNDIR='AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121'
 
-sbatch -A fungalp -C haswell --nodes=8 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config
+sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config
 
 
 mkdir -p AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121
@@ -2260,7 +2260,7 @@ export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBO.1034
 
 export RUNDIR='AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121'
 
-sbatch -A fungalp -C haswell --nodes=8 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config
+sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config
 
 
 mkdir -p AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121
@@ -2273,7 +2273,7 @@ export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBP.1034
 
 export RUNDIR='AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121'
 
-sbatch -A fungalp -C haswell --nodes=8 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config
+sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config
 
 
 
