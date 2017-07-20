@@ -92,7 +92,7 @@ chmod -R 755 /global/cscratch1/sd/mdunlap
 chgrp -R gtrnd /global/cscratch1/sd/mdunlap
 chmod g+s /global/cscratch1/sd/mdunlap
 
-# in order to use prinseq to get the statistics for an assembly
+# in order to use prinseq to get the statistics for an assembly (do this in th results dir of the rundir)
 
 chmod u+x /global/cscratch1/sd/mdunlap/fastq_data_striped/prinseq-lite-0.20.4/prinseq-lite.pl
 export PATH=$PATH:/global/cscratch1/sd/mdunlap/fastq_data_striped/prinseq-lite-0.20.4/
