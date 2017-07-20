@@ -2077,7 +2077,7 @@ sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_
 
 
 
-edit round 22: num_scaff_loop 2, mer_sizes_ , min_depth_
+edit round 22: num_scaff_loop 1, mer_sizes_65_91_121 , min_depth_4
 
 
 module use ~regan/modulefiles-cori
@@ -2085,95 +2085,95 @@ module use ~regan/modulefiles-cori
 module load HipMer/latest
 
 
-mkdir -p AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+mkdir -p AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBB.10343.7.157719.TGACCA.anqdpht.fastq AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBB.10343.7.157719.TGACCA.anqdpht.fastq AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
 export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config'
 
-export RUNDIR='AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127'
+export RUNDIR='AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1'
 
-sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config
 
 
-mkdir -p AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+mkdir -p AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
 export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config'
 
-export RUNDIR='AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127'
+export RUNDIR='AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1'
 
-sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config
 
 
-mkdir -p AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+mkdir -p AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
 export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config'
 
-export RUNDIR='AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127'
+export RUNDIR='AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1'
 
-sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config
 
 
-mkdir -p AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+mkdir -p AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
 export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config'
 
-export RUNDIR='AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127'
+export RUNDIR='AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1'
 
-sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config
 
 
-mkdir -p AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+mkdir -p AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBN.10348.4.157965.CGTACG.anqdpht.fastq AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBN.10348.4.157965.CGTACG.anqdpht.fastq AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
 export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config'
 
-export RUNDIR='AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127'
+export RUNDIR='AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1'
 
-sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config
 
 
-mkdir -p AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+mkdir -p AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBO.10343.8.157724.CAGATC.anqdpht.fastq AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBO.10343.8.157724.CAGATC.anqdpht.fastq AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
 export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config'
 
-export RUNDIR='AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127'
+export RUNDIR='AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1'
 
-sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config
 
 
-mkdir -p AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+mkdir -p AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
-cp AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127
+cp AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1
 
 export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config'
 
-export RUNDIR='AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_7.mer_sizes_57_87_127'
+export RUNDIR='AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_1'
 
-sbatch -A fungalp -C haswell --nodes=32 --time=240:00 --qos=jgi $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config
 
 
 
@@ -2374,4 +2374,307 @@ export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBP.1034
 export RUNDIR='AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_3.mer_sizes_93'
 
 sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config
+
+
+
+edit round 25: num_scaff_loop 2, mer_sizes_65_91_121 , min_depth_4
+
+
+module use ~regan/modulefiles-cori
+
+module load HipMer/latest
+
+
+mkdir -p AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBB.10343.7.157719.TGACCA.anqdpht.fastq AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config'
+
+export RUNDIR='AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config
+
+
+mkdir -p AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config'
+
+export RUNDIR='AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config
+
+
+mkdir -p AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config'
+
+export RUNDIR='AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config
+
+
+mkdir -p AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config'
+
+export RUNDIR='AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config
+
+
+mkdir -p AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBN.10348.4.157965.CGTACG.anqdpht.fastq AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config'
+
+export RUNDIR='AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config
+
+
+mkdir -p AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBO.10343.8.157724.CAGATC.anqdpht.fastq AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config'
+
+export RUNDIR='AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config
+
+
+mkdir -p AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+cp AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config'
+
+export RUNDIR='AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_2'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config
+
+
+
+
+edit round 26: num_scaff_loop 3, mer_sizes_65_91_121 , min_depth_4
+
+
+module use ~regan/modulefiles-cori
+
+module load HipMer/latest
+
+
+mkdir -p AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBB.10343.7.157719.TGACCA.anqdpht.fastq AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config'
+
+export RUNDIR='AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config
+
+
+mkdir -p AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config'
+
+export RUNDIR='AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config
+
+
+mkdir -p AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config'
+
+export RUNDIR='AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config
+
+
+mkdir -p AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config'
+
+export RUNDIR='AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config
+
+
+mkdir -p AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBN.10348.4.157965.CGTACG.anqdpht.fastq AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config'
+
+export RUNDIR='AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config
+
+
+mkdir -p AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBO.10343.8.157724.CAGATC.anqdpht.fastq AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config'
+
+export RUNDIR='AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config
+
+
+mkdir -p AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+cp AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config'
+
+export RUNDIR='AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_3'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config
+
+
+
+edit round 27: num_scaff_loop_5, mer_sizes_65_91_121 , min_depth_4
+
+
+module use ~regan/modulefiles-cori
+
+module load HipMer/latest
+
+
+mkdir -p AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBB.10343.7.157719.TGACCA.anqdpht.fastq AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config'
+
+export RUNDIR='AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBB.10343.7.157719.TGACCA.anqdpht.fastq.config
+
+
+mkdir -p AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config'
+
+export RUNDIR='AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config
+
+
+mkdir -p AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config'
+
+export RUNDIR='AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBG.10343.7.157719.ACAGTG.anqdpht.fastq.config
+
+
+mkdir -p AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config'
+
+export RUNDIR='AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBH.10348.3.157960.GTAGAG.anqdpht.fastq.config
+
+
+mkdir -p AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBN.10348.4.157965.CGTACG.anqdpht.fastq AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config'
+
+export RUNDIR='AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBN.10348.4.157965.CGTACG.anqdpht.fastq.config
+
+
+mkdir -p AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBO.10343.8.157724.CAGATC.anqdpht.fastq AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config'
+
+export RUNDIR='AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBO.10343.8.157724.CAGATC.anqdpht.fastq.config
+
+
+mkdir -p AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config'
+
+export RUNDIR='AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config
+
+
 
