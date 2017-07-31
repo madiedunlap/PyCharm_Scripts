@@ -146,3 +146,31 @@ do
         # HIPMER_CONFIG=${file}.config sbatch --nodes=4 ~/hipmeraculous/.edison_deploy/run_hipmer-edison.sh
 done
 
+# run meraculous
+module load meraculous/2.2.2.5
+
+create library-specific configs: *** note: read length cannot be smaller than selected mer_size ***
+#!/usr/bin/env bash
+
+
+for file in AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq
+do        printf "lib_seq AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq ALBAL2D 535 131 0 0 0 1 1 1 0 0\ngenome_size 0.5\nnum_prefix_blocks 16\ngap_close_aggressive 1\nuse_cluster 1\ncluster_num_nodes 50\ncluster_slots_per_task 8\ncluster_ram_request 24\ncluster_walltime 12:00:00\nmer_size 101\nmin_depth_cutoff 4" "$file" | cat - >> ${file}.config
+done
+
+run_meraculous.sh -c AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config -dir AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_101
+
+#remove all the shorter fastq read lengths using bbtools
+
+mkdir edit_fastq_size.sh
+
+edit_fastq_size.sh:
+
+module load bbtools
+rqcfilter.sh library=frag phix=t minlength=101 rna=f in=AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq path=/global/projectb/scratch/mdunlap/fastq_data_nonstriped/AYSBC.10348.2.157955.AGTCAA.anqdpht.fastq_edited removehuman removecat removedog removemouse removemicrobes
+
+chmod u+x ./edit_fastq_size.sh
+
+qsub -N bbtoolsFilt -cwd -b yes -now no -j yes -m abes -M mdunlap@lbl.gov  -w e -l exclusive.c -l h_rt=5:00:00 ./edit_fastq_size.sh
+
+qstat -u mdunlap
+
