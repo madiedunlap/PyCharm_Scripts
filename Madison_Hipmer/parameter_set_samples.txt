@@ -2703,9 +2703,6 @@ sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_
 edit round 29: co-assembly 2
 
 
-edit round 28: co-assembly 1, mer sizes 65, 91, 121, min depth cutoff 4, num scaff loop 5
-
-
 module use ~regan/modulefiles-cori
 
 module load HipMer/latest
