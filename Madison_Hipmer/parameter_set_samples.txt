@@ -2677,4 +2677,52 @@ export RUNDIR='AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config.rundir.min_depth
 sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AYSBP.10348.3.157960.GTCCGC.anqdpht.fastq.config
 
 
+edit round 28: co-assembly 1, mer sizes 65, 91, 121, min depth cutoff 4, num scaff loop 5
 
+
+module use ~regan/modulefiles-cori
+
+module load HipMer/latest
+
+
+mkdir -p AGHZY.AGNAG.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AGHZY.AGNAG.config AGHZY.AGNAG.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AGHZY.8958.4.117162.ATTCCT.anqdp.fastq AGHZY.AGNAG.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AGNAG.8957.6.117210.CGTACG.anqdp.fastq AGHZY.AGNAG.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AGHZY.AGNAG.config'
+
+export RUNDIR='AGHZY.AGNAG.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AGHZY.AGNAG.config
+
+
+edit round 29: co-assembly 2
+
+
+edit round 28: co-assembly 1, mer sizes 65, 91, 121, min depth cutoff 4, num scaff loop 5
+
+
+module use ~regan/modulefiles-cori
+
+module load HipMer/latest
+
+
+mkdir -p AGHZY.AGNAG.AGNAH.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AGHZY.AGNAG.AGNAH.config AGHZY.AGNAG.AGNAH.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AGHZY.8958.4.117162.ATTCCT.anqdp.fastq AGHZY.AGNAG.AGNAH.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AGNAG.8957.6.117210.CGTACG.anqdp.fastq AGHZY.AGNAG.AGNAH.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AGNAH.8957.4.117200.AGTTCC.anqdp.fastq AGHZY.AGNAG.AGNAH.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AGHZY.AGNAG.AGNAH.config'
+
+export RUNDIR='AGHZY.AGNAG.AGNAH.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AGHZY.AGNAG.AGNAH.config

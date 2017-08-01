@@ -149,7 +149,7 @@ done
 # run meraculous
 module load meraculous/2.2.2.5
 
-create library-specific configs: *** note: read length cannot be smaller than selected mer_size ***
+create library-specific configs: *** note: read length cannot be smaller than selected mer_size, can use mer_size 0 to auto-select ***
 #!/usr/bin/env bash
 
 
@@ -173,4 +173,39 @@ chmod u+x ./edit_fastq_size.sh
 qsub -N bbtoolsFilt -cwd -b yes -now no -j yes -m abes -M mdunlap@lbl.gov  -w e -l exclusive.c -l h_rt=5:00:00 ./edit_fastq_size.sh
 
 qstat -u mdunlap
+
+#for co-assemblies:
+
+use this format for the config file:
+
+lib_seq AGHZY.8958.4.117162.ATTCCT.anqdp.fastq AlbAL2D 535 131 0 0 0 1 1 1 0 0 1 1
+lib_seq AGNAG.8957.6.117210.CGTACG.anqdp.fastq AlbAL2D 535 131 0 0 0 1 1 1 0 0 1 1
+mer_sizes 65,91,121
+dynamic_min_depth 0.9
+is_diploid 0
+num_scaff_loops 5
+min_depth_cutoff 4
+
+cp over both fastq files into the ouput directory:
+
+
+module use ~regan/modulefiles-cori
+
+module load HipMer/latest
+
+
+mkdir -p AGHZY.AGNAG.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AGHZY.AGNAG.config AGHZY.AGNAG.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AGHZY.8958.4.117162.ATTCCT.anqdp.fastq AGHZY.AGNAG.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+cp AGNAG.8957.6.117210.CGTACG.anqdp.fastq AGHZY.AGNAG.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5
+
+export HIPMER_CONFIG='/global/cscratch1/sd/mdunlap/fastq_data_striped/AGHZY.AGNAG.config'
+
+export RUNDIR='AGHZY.AGNAG.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_sizes_65_91_121.num_scaff_loop_5'
+
+sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AGHZY.AGNAG.config
+
 
