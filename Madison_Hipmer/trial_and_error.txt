@@ -179,15 +179,15 @@ qstat -u mdunlap
 use this format for the config file:
 
 lib_seq AGHZY.8958.4.117162.ATTCCT.anqdp.fastq AlbAL2D 535 131 0 0 0 1 1 1 0 0 1 1
-lib_seq AGNAG.8957.6.117210.CGTACG.anqdp.fastq AlbAL2D 535 131 0 0 0 1 1 1 0 0 1 1
+lib_seq AGNAG.8957.6.117210.CGTACG.anqdp.fastq AlbAL2D2 535 131 0 0 0 1 2 1 0 0 1 1
 mer_sizes 65,91,121
 dynamic_min_depth 0.9
 is_diploid 0
 num_scaff_loops 5
 min_depth_cutoff 4
 
-cp over both fastq files into the ouput directory:
 
+create the bash script for running the job:
 
 module use ~regan/modulefiles-cori
 
@@ -209,3 +209,6 @@ export RUNDIR='AGHZY.AGNAG.anqdp.fastq.config.rundir.min_depth_cutoff_4.mer_size
 sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_cori.sh) $(which run_hipmer.sh) AGHZY.AGNAG.config
 
 
+
+Make sure the .fastq files are unzipped and copied over to the directory from which you are submitting the job.
+The config file should be in this same directory.
