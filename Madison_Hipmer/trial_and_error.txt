@@ -211,4 +211,4 @@ sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_
 
 
 Make sure the .fastq files are unzipped and copied over to the directory from which you are submitting the job.
-The config file should be in this same directory.
+The config file should be in this same directory!
