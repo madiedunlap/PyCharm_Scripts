@@ -2726,7 +2726,7 @@ sbatch --nodes=8 --time=240:00 --partition=regular --qos=premium $(which sbatch_
 
 
 
-edit rond 30: min depth 4, mer sizes 65,91,121, num scaff loop 5 for all remaining samples
+edit round 30: min depth 4, mer sizes 65,91,121, num scaff loop 5 for all remaining samples
 
 
 module use ~regan/modulefiles-cori
