@@ -332,6 +332,8 @@ done
 
 # edit round 27: num_scaff_loops 5, mer_sizes_65_91_121, min_depth_4
 
+#!/usr/bin/env bash
+
 for file in *.fastq
 do
         printf "lib_seq %s AlbAL2D 535 131 0 0 0 1 1 1 0 0 1 1\nmer_sizes 65,91,121\ndynamic_min_depth 0.9\nis_diploid 0\nnum_scaff_loops 5\nmin_depth_cutoff 4" "$file" | cat - >> ${file}.config

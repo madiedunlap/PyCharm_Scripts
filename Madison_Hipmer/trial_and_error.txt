@@ -42,6 +42,8 @@ ls
 /global/cscratch1/sd/mdunlap/fastq_data_striped> rm *.fastq.config
 cp /global/projectb/scratch/mdunlap/fastq_data_nonstriped/*.anqdpht.fastq.config /global/cscratch1/sd/mdunlap/fastq_data_striped/
 
+(must copy over from genepool into cori in order to stripe the files)
+
 ls
 
 # if you don't have access/permissions to a file in your own directory, you can copy the file to gain ownership (+ rename it) and/or do chmod u+x
